@@ -1,6 +1,7 @@
 num = input("Enter 4 integers : ")
 num = num.split(" ")
 num = [int(i) for i in num]
+print("Numbers are : ", num)
 
 if(len(num) == 4) :
     exp = (num[0]**num[1]) - (num[2]**num[3])
