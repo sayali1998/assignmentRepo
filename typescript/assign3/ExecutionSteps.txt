@@ -1,0 +1,2 @@
+$ tsc --target es6 main.ts --outfile out.js  
+$ node ./out.js  
