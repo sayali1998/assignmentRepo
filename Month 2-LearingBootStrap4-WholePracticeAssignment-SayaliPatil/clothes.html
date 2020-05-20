@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <script src="firebase.js"></script>
+      <script src="data.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Comic+Neue:400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <title>Trendy Hub</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="pos-f-b">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4" style="background-color:  #232f3f;">
+            <ul class="navbar-nav mr-auto" style="color: white; ">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="aboutUs.html">About Us <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark" style="background-color:  #232f3f;">
+          <button class="navbar-toggler drop-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>           
+        </nav>         
+      </div>      
+    </div>
+
+    <div class="container-fluid mt-0" id="header">     
+      <nav class="navbar navbar-expand-sm mb-5">
+        <img src="logo.jpg" id="logo" style="margin-bottom: 30px;">
+        <ul class="navbar-nav mb-5 mt-0">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="clothes.html">Clothes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="books.html">Books</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Electronics
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="mobile.html">Mobile</a>
+                  <a class="dropdown-item" href="#">Laptop</a>
+                  <a class="dropdown-item" href="#">Laptop Accessories</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="userDetails.html">User Details</a>
+            </li>
+            <a class="nav-link text-white"style="margin-left: 750px;" href="cart.html">Cart</a>
+            <svg class="bi bi-bag" width="2em" height="2em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 001 1h10a1 1 0 001-1V5zM1 4v10a2 2 0 002 2h10a2 2 0 002-2V4H1z" clip-rule="evenodd"/>
+            <path d="M8 1.5A2.5 2.5 0 005.5 4h-1a3.5 3.5 0 117 0h-1A2.5 2.5 0 008 1.5z"/>
+        </svg>
+        <li class="nav-item" style="color: white; padding-left: 30px; padding-bottom: 30px;"><a class="nav-link text-white" href="signIn.html"><i class="fas fa-user" style=" height:40px; width:40px"></i></a></li>
+
+
+        </ul>
+      </nav>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Women's Wear</h1>
+        
+      </div>
+    </div>
+    <div class="container-fluid" style="text-align: left;" >
+      <div class="row mb-4" >
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/womenWear1.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Bitterlime</h5>
+              <p class="card-text">Mustard Yellow Top with Grey Culottes<br>Rs.465/- <strike class="text-muted" style="font-size: 14px;">Rs. 1499/-</strike>
+                <span style="color: green; font-weight: bold;">68% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/womenWear1.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/womenWear2.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Ahalyaa</h5>
+              <p class="card-text">Black & Off-White Solid Tunic with Skirt<br>Rs.1805/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 4199/-</strike>
+                <span style="color: green; font-weight: bold;">57% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/womenWear2.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/womenWear3.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Zastraa</h5>
+              <p class="card-text">Black & White Solid Top with Palazzos<br>Rs.799/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 3999/-</strike>
+                <span style="color: green; font-weight: bold;">80% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/womenWear3.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/womenWear4.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Taavi</h5>
+              <p class="card-text">Off-White Crop Top with Blue Palazzos<br>Rs.1349/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 2999/-</strike>
+                <span style="color: green; font-weight: bold;">55% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/womenWear4.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+      </div>            
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Men's Wear</h1>        
+      </div>
+    </div>
+    <div class="container-fluid" style="text-align: left;" >
+      <div class="row mb-4" >
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/menWear1.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>SG LEMAN</h5>
+              <p class="card-text">Turquoise Red with Silk Sherwani Set<br>Rs.2479
+                <strike class="text-muted" style="font-size: 14px;">Rs. 5509/-</strike>
+                <span style="color: green; font-weight: bold;">55% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/menWear1.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/menWear2.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Hangup</h5>
+              <p class="card-text">HANGUP Men Pink Suit<br>Rs.2449/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 6999/-</strike>
+                <span style="color: green; font-weight: bold;">65% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/menWear2.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/menWear3.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>LUXURAZI</h5>
+              <p class="card-text">Grey Solid Single-Breasted Formal Suit<br>Rs.9099/-
+                <strike class="text-muted" style="font-size: 14px;">Rs. 13999/-</strike>
+                <span style="color: green; font-weight: bold;">35% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/menWear3.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/menWear4.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>GAP</h5>
+              <p class="card-text">Men's Checked Lived-In Stretch Poplin Shirt<br>Rs.1599/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 1999/-</strike>
+                <span style="color: green; font-weight: bold;">20% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/menWear4.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+      </div>  
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Baby Wear</h1>        
+      </div>
+    </div>
+    <div class="container-fluid" style="text-align: left;" >
+      <div class="row mb-4" >
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/babyWear1.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Luke & Lilly</h5>
+              <p class="card-text">Infant Multipack Clothing Set <br>Rs.644/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 1499/-</strike>
+                <span style="color: green; font-weight: bold;">57% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/babyWear1.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/babyWear2.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Orange and Orchid</h5>
+              <p class="card-text">Frock and T-shirt set for twins<br>Rs.499/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 999/-</strike>
+                <span style="color: green; font-weight: bold;">55% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/babyWear2.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/babyWear3.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>H&M</h5>
+              <p class="card-text">Infant Cotton set<br>Rs.799/- <strike class="text-muted" style="font-size: 14px;">Rs. 1099/-</strike>
+                <span style="color: green; font-weight: bold;">27% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/babyWear3.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 620px;">
+            <img class="card-img-top" src="Images/babyWear4.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Wish Karo</h5>
+              <p class="card-text">White Solid Fit and Flare Dress<br>Rs.664/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 1899/-</strike>
+                <span style="color: green; font-weight: bold;">65% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/babyWear4.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+      </div>  
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    
+    <script src="/__/firebase/7.14.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.14.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.14.0/firebase-database.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    
+  
+  </body>
+</html>

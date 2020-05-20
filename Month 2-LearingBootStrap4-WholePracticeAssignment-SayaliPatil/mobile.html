@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <script src ="data.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Comic+Neue:400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <title>Trendy Hub</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="pos-f-b">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4" style="background-color:  #232f3f;">
+            <ul class="navbar-nav mr-auto" style="color: white; ">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="aboutUs.html">About Us <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark" style="background-color:  #232f3f;">
+          <button class="navbar-toggler drop-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>           
+        </nav>         
+      </div>      
+    </div>
+
+    <div class="container-fluid mt-0" id="header">     
+      <nav class="navbar navbar-expand-sm mb-5">
+        <img src="logo.jpg" id="logo" style="margin-bottom: 30px;">
+        <ul class="navbar-nav mb-5 mt-0">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="clothes.html">Clothes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="books.html">Books</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-danger dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Mobile
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="mobile.html">Mobile</a>
+                  <a class="dropdown-item" href="#">Laptop</a>
+                  <a class="dropdown-item" href="#">Laptop Accessories</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="userDetails.html">User Details</a>
+            </li>
+            <a class="nav-link text-white"style="margin-left: 750px;" href="cart.html">Cart</a>
+            <svg class="bi bi-bag" width="2em" height="2em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 001 1h10a1 1 0 001-1V5zM1 4v10a2 2 0 002 2h10a2 2 0 002-2V4H1z" clip-rule="evenodd"/>
+            <path d="M8 1.5A2.5 2.5 0 005.5 4h-1a3.5 3.5 0 117 0h-1A2.5 2.5 0 008 1.5z"/>
+        </svg>
+        <li class="nav-item" style="color: white; padding-left: 30px; padding-bottom: 30px;"><a class="nav-link text-white" href="signIn.html"><i class="fas fa-user" style=" height:40px; width:40px"></i></a></li>
+
+
+        </ul>
+      </nav>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">iPhone Series</h1>
+        
+      </div>
+    </div>
+    <div class="container-fluid" style="text-align: left;" >
+      <div class="row mb-4" >
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 640px;">
+            <img class="card-img-top" src="Images/apple1.jpg" style="height: 450px;width: 98%">
+            <div class="card-body">
+              <h5>Apple iPhone XR White</h5>
+              <p class="card-text">iPhone XR features the most advanced LCD in a smartphone<br>Rs.54,990/-
+                <strike class="text-muted" style="font-size: 14px;">Rs. 76,900/-</strike>
+                <span style="color: green; font-weight: bold;">28% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/apple1.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 640px;">
+            <img class="card-img-top" src="Images/apple2.jpg" style="height: 450px;width: 98%">
+            <div class="card-body">
+              <h5>Apple Iphone Xs</h5>
+              <p class="card-text">
+                Experience the feeling of power and sophistication in your palm.<br>Rs.1,19,900/- </p>
+              <a href="#" class="btn btn-primary" id="Images/apple2.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 640px;">
+            <img class="card-img-top" src="Images/apple3.jpg" style="height: 450px;width: 98%">
+            <div class="card-body">
+              <h5>Apple Iphone 7</h5>
+              <p class="card-text">The iPhone XR has arrived to scintillate our senses with a host of features<br>Rs.36,999/-
+                <strike class="text-muted" style="font-size: 14px;">Rs.37,900/-</strike>
+                <span style="color: green; font-weight: bold;">2% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/apple3.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 640px;">
+            <img class="card-img-top" src="Images/apple4.jpg" style="height: 450px; width: 98%;">
+            <div class="card-body">
+              <h5>Apple iPhone 8</h5>
+              <p class="card-text">oasting a color-matched, aerospace-grade aluminium band, this phone is a stunner<br>Rs. 38,999/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 39,900/-</strike>
+                <span style="color: green; font-weight: bold;">2% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/apple4.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+      </div>            
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Samsung Series</h1>        
+      </div>
+    </div>
+    <div class="container-fluid" style="text-align: left;" >
+      <div class="row mb-4" >
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 660px;">
+            <img class="card-img-top" src="Images/samsung1.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Samsung Galaxy S9 Plus</h5>
+              <p class="card-text">A blend of innovative design and technology - the Samsung Galaxy S9+ is powered by an octa-core processor<br>Rs.29,999/-
+                <strike class="text-muted" style="font-size: 14px;">Rs. 70,000/-</strike>
+                <span style="color: green; font-weight: bold;">57% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/samsung1.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 660px;">
+            <img class="card-img-top" src="Images/samsung2.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Samsung Galaxy S10 Lite </h5>
+              <p class="card-text">Capture stutter-free videos for your vlogs, gorgeous pictures for your social media.<br><br>Rs.42,999/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 43,999/-</strike>
+                <span style="color: green; font-weight: bold;">2% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/samsung2.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 660px;">
+            <img class="card-img-top" src="Images/samsung3.jpg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Samsung Galaxy S20+</h5>
+              <p class="card-text">Galaxy S10 Lite comes with a 6.7" edge-to-edge display, light sensor and on-screen fingerprint scanner<br>Rs.77,999/-
+                <strike class="text-muted" style="font-size: 14px;">Rs. 83,000/-</strike>
+                <span style="color: green; font-weight: bold;">6% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/samsung3.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+        <div class="col-3">   
+          <div class="card mt-3 ml-1 " style="height: 660px;">
+            <img class="card-img-top" src="Images/samsung4.jpeg" style="height: 450px;">
+            <div class="card-body">
+              <h5>Samsung Galaxy Note 9 </h5>
+              <p class="card-text">The Samsung Galaxy Note 9 puts a new spin on the term ‘an interactive smartphone’. <br>Rs.71,599/- 
+                <strike class="text-muted" style="font-size: 14px;">Rs. 73,600/-</strike>
+                <span style="color: green; font-weight: bold;">2% off.</span></p>
+              <a href="#" class="btn btn-primary" id="Images/samsung4.jpg" onclick="addCart(this.id)">Add to Cart</a>
+              </div>
+          </div>           
+        </div>
+      </div>  
+    </div>  
+    
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
